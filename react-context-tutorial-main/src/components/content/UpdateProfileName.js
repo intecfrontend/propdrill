@@ -5,10 +5,10 @@ import { useState } from "react";
 const UpdateProfileName = () => {
   const updateUserName = useUpdateUserName();
   const userName = useUserName();
-
+  // console.log("userName " + userName);
   const [newUserName, setNewUserName] = useState(userName);
 
-  const onUpdateUserName = (e) => {
+  const onUpdateUserName = e => {
     e.preventDefault();
     updateUserName(newUserName);
   };
@@ -28,7 +28,7 @@ const UpdateProfileName = () => {
                 id="floatingInput"
                 placeholder="Name"
                 value={newUserName}
-                onChange={(e) => setNewUserName(e.target.value)}
+                onChange={e => setNewUserName(e.target.value)}
               />
               <label for="floatingInput">Name</label>
             </div>

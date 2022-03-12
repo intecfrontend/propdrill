@@ -21,3 +21,6 @@ export const UserProvider = ({ value, children }) => {
     </UserNameContext.Provider>
   );
 };
+// Before You Use Context API
+// Note that, Context is mainly used when some data needs to be accessible by many components at different nesting levels and you want to avoid passing props down the tree.
+// Context API is very useful, but you should use it carefully because it can sometimes make component reuse difficult.

@@ -5,7 +5,7 @@ const Header = ({ userName }) => {
   return (
     <div className="container">
       <header className='d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"'>
-        <Branding />
+        <Branding userName={userName}/>
         <Menu userName={userName} />
       </header>
     </div>
